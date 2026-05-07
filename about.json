@@ -2,12 +2,14 @@
   "name": "Xpeng Brand Header",
   "component": true,
   "authors": "Jahan Gagan",
-  "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
-  "license_url": "TODO: Put your theme's LICENSE URL here",
-  "learn_more": "TODO",
+  "about_url": "https://github.com/jahan-ggn/xpeng-brand-header#readme",
+  "license_url": "https://github.com/jahan-ggn/xpeng-brand-header/blob/main/LICENSE",
+  "learn_more": "https://github.com/jahan-ggn/xpeng-brand-header#readme",
   "theme_version": "0.0.1",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
-  "assets": {},
+  "assets": {
+    "icons-sprite": "/assets/my-icons.svg"
+  },
   "modifiers": {}
 }
