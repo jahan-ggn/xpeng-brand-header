@@ -1,0 +1,9 @@
+.sidebar-section {
+  &[data-section-name="links"] {
+    display: block !important;
+  }
+}
+
+#toggle-current-user {
+  padding: 0 !important;
+}

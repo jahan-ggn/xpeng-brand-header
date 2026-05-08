@@ -46,6 +46,7 @@
 
 .d-header {
   background-color: var(--secondary);
+
   &__contents {
     display: flex;
     align-items: center;
@@ -66,9 +67,32 @@
 .sidebar-section {
   &[data-section-name="links"] {
     display: none !important;
+  }
+}
 
-    @media screen and (width <= 767px) {
-      display: block !important;
+.current-user {
+  display: flex;
+  align-items: center;
+
+  #toggle-current-user {
+    width: auto;
+    padding-inline: 0.75em;
+
+    .avatar {
+      display: none;
+    }
+
+    &::after {
+      content: "My Profile";
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: #e8450a !important;
+      color: #fff !important;
+      border: none !important;
+      border-radius: 3px;
+      padding: 0.75rem;
     }
   }
 }
