@@ -11,7 +11,7 @@ export default class UserMenuLightDarkToggle extends Component {
   }
 
   get label() {
-    return this.currentMode === "dark" ? "Dark" : "Light";
+    return this.currentMode === "dark" ? "Light" : "Dark";
   }
 
   @action

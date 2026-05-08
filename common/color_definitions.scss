@@ -1,0 +1,11 @@
+$header-link-text-color: dark-light-choose(#1a181459, #ffffff4d);
+$header-link-hover-text-color: dark-light-choose($primary, #fff);
+$header-link-hover-bg-color: dark-light-choose(#fff, #161616);
+$header-button-border-color: dark-light-choose(#00000012, #ffffff12);
+
+:root {
+  --header-link-text-color: #{$header-link-text-color};
+  --header-link-hover-text-color: #{$header-link-hover-text-color};
+  --header-link-hover-bg-color: #{$header-link-hover-bg-color};
+  --header-button-border-color: #{$header-button-border-color};
+}

@@ -1,20 +1,22 @@
 .custom-header-links {
-  gap: 1rem;
-  .headerLink a {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--header_primary);
-    padding: 0.4rem !important;
+  .headerLink {
+    & > a {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--header-link-text-color) !important;
+      padding: 0.4rem 0.75rem;
 
-    &:hover {
-      color: var(--tertiary);
-      background: transparent;
-    }
-    &.active {
-      color: var(--tertiary);
-      background: rgba(0, 158, 145, 0.1);
+      &:hover {
+        color: var(--header-link-hover-text-color) !important;
+        background: var(--header-link-hover-bg-color) !important;
+      }
+
+      &.active {
+        color: var(--tertiary) !important;
+        background: transparent;
+      }
     }
   }
 }
@@ -22,30 +24,32 @@
 .user-menu-light-dark-toggle {
   display: flex;
   align-items: center;
+  order: 2 !important;
 
   &__button {
-    font-family: "League Spartan", sans-serif;
+    border: 1px solid var(--header-button-border-color) !important;
     font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--header_primary);
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    padding: 0.4rem !important;
+    color: var(--header-link-text-color) !important;
+    background: none !important;
+    padding: 0.4rem 0.75rem;
 
     &:hover {
-      color: var(--tertiary) !important;
+      color: var(--primary) !important;
+      border-color: #00000021 !important;
       background: transparent !important;
     }
   }
 }
 
-.d-header .contents {
-  display: flex;
-  align-items: center;
+.d-header {
+  background-color: var(--secondary);
+  &__contents {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .before-header-panel-outlet {
@@ -59,8 +63,12 @@
   align-items: center;
 }
 
-.user-menu-light-dark-toggle {
-  order: 2 !important;
-  display: flex;
-  align-items: center;
+.sidebar-section {
+  &[data-section-name="links"] {
+    display: none !important;
+
+    @media screen and (width <= 767px) {
+      display: block !important;
+    }
+  }
 }
