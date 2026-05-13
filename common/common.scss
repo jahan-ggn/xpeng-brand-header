@@ -94,5 +94,35 @@
       border-radius: 3px;
       padding: 0.75rem;
     }
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.illustration-not-found {
+  svg {
+    > circle:nth-of-type(1),
+    > circle:nth-of-type(2),
+    > rect:nth-of-type(1),
+    > rect:nth-of-type(2) {
+      fill: #e8450a !important;
+      stroke: #e8450a !important;
+    }
+
+    > circle:nth-of-type(3),
+    > circle:nth-of-type(4) {
+      fill: var(--secondary) !important;
+      stroke: var(--secondary) !important;
+    }
+
+    path {
+      fill: #e8450a !important;
+
+      &:last-of-type {
+        stroke: #e8450a !important;
+      }
+    }
   }
 }
