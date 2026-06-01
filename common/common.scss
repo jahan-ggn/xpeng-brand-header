@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   order: 2 !important;
+  margin-right: 0.5rem;
 
   &__button {
     border: 1px solid var(--header-button-border-color) !important;
